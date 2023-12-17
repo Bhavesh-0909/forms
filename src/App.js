@@ -67,6 +67,42 @@ function App() {
         id='isVisible'
         />
         <label htmlFor='isVisible'>Is isVisible</label>
+        <br/>
+        <br/>
+
+        <label>
+          Mode:
+          <input
+          type="radio"
+          name="mode"
+          onChange={changehandler}
+          checked={formData.mode === "online"}
+          value="online"
+          id='online'
+          />
+          <label htmlFor='online'>
+            online
+          </label>
+          <input
+          type="radio"
+          name="mode"
+          onChange={changehandler}
+          checked={formData.mode === "offline"}
+          value="offline"
+          id='offline'
+          />
+          <label htmlFor='offline'>
+            offline
+          </label>
+        </label>
+
+        <select>
+          <option>scorpio</option>
+          <option>fortuner</option>
+          <option>range rover</option>
+          <option></option>
+          <option></option>
+        </select>
 
                 
 
