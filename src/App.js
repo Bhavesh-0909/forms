@@ -67,6 +67,7 @@ function App() {
         id='isVisible'
         />
         <label htmlFor='isVisible'>Is isVisible</label>
+        
         <br/>
         <br/>
 
@@ -96,12 +97,22 @@ function App() {
           </label>
         </label>
 
-        <select>
+        <br/>
+        <br/>
+        <label>
+          Fav Car : 
+        </label>
+
+        <select 
+        name="favCar"
+        value={formData.favCar}
+        onChange={changehandler}
+        >
           <option>scorpio</option>
           <option>fortuner</option>
           <option>range rover</option>
-          <option></option>
-          <option></option>
+          <option>bmw</option>
+          <option>audi</option>
         </select>
 
                 
